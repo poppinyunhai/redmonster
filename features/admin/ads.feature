@@ -15,7 +15,7 @@ Feature: Manage Ads
         Then it should display link 添加新广告
         When I click the link 添加新广告
           Then page title should contain 添加新广告
-          And I should see 广告标题 
+          And I should see 广告标题
           And I should see 广告语
 
   Scenario: update ad
@@ -25,9 +25,9 @@ Feature: Manage Ads
       Then it should display link 修改
       When I click the link 修改
       Then page title should contain 修改广告
-        And I should see 广告标题 
-        When I provide new ad title
+        And I should see 广告标题
+        When I provide new ad title with: Monster 1.0 Preview
         Then I should be redirected to the admin ads page
-          And I should see Rabel 1.0 Preview
+          And I should see Monster 1.0 Preview
 
 
